@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Workload Task Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        .summary-box {
+            background: #ffffff;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            width: 300px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            border-bottom: 1px solid #e0e0e0;
+            text-align: left;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+        }
+        .status {
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: white;
+            font-size: 12px;
+        }
+        .not-started { background-color: #7f8c8d; }
+        .in-progress { background-color: #f39c12; }
+        .completed { background-color: #27ae60; }
+    </style>
+</head>
+<body>
+
+    <h1>工数・タスク管理ダッシュボード</h1>
+
+    <div class="summary-box">
+        <h3>今週の工数合計</h3>
+        <p style="font-size: 24px; font-weight: bold;">32 時間</p>
+    </div>
+
+    <table>
+        <tr>
+            <th>日付</th>
+            <th>タスク名</th>
+            <th>工数</th>
+            <th>ステータス</th>
+        </tr>
+        <tr>
+            <td>5/20</td>
+            <td>ログイン画面のUI調整</td>
+            <td>4h</td>
+            <td><span class="status completed">完了</span></td>
+        </tr>
+        <tr>
+            <td>5/21</td>
+            <td>API連携テスト</td>
+            <td>6h</td>
+            <td><span class="status in-progress">対応中</span></td>
+        </tr>
+        <tr>
+            <td>5/22</td>
+            <td>DB設計の見直し</td>
+            <td>5h</td>
+            <td><span class="status not-started">未着手</span></td>
+        </tr>
+        <tr>
+            <td>5/23</td>
+            <td>エラーログの整理</td>
+            <td>3h</td>
+            <td><span class="status completed">完了</span></td>
+        </tr>
+    </table>
+
+</body>
+</html>
